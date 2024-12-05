@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 600px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transform: scale(0.8);
+      opacity: 0;
+      animation: fadeInZoom 1s ease-out forwards;
+    }
+
+    @keyframes fadeInZoom {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .header {
+      font-size: 28px;
+      font-weight: bold;
+      color: #007acc;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards 0.5s;
+    }
+
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 20px auto;
+      object-fit: cover;
+      border: 3px solid #007acc;
+    }
+
+    .content {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards 0.8s;
+    }
+
+    .motto {
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 20px;
+      color: #005f99;
+    }
+
+    .button-container {
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards 1.1s;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007acc;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #005f99;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Mahasiswa</div>
+    <img src="ry.jpg" alt="Foto Profil" class="profile-picture">
+    <div class="content">
+      <p><strong>Nama:</strong> Ockta Raya Ramadhani</p>
+      <p><strong>Program Studi:</strong> Pendidikan Teknik Mekatronika]\</p>
+      <p class="motto">"Hidup adalah belajar tanpa henti. Setiap langkah adalah peluang untuk tumbuh dan menjadi lebih baik."</p>
+    </div>
+    <div class="button-container">
+      <a href="index.html" class="button">Kembali ke Halaman Utama</a>
+    </div>
+  </div>
+</body>
+</html>
